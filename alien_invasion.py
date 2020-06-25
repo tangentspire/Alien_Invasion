@@ -27,6 +27,7 @@ def run_game():
         # Update the ship's position
         ship.update()
         bullets.update()
+        gf.update_bullets(bullets)
         # Redraw the screen during each pass through the look.
         gf.update_screen(ai_settings, screen, ship, bullets)     
 
